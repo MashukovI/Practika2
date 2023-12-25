@@ -1,0 +1,35 @@
+﻿@model List<InputData>
+@{
+    ViewData["Title"] = "Home Page";
+}
+<div class="container d-flex align-items-center justify-content-center" style="height: 100vh; background-color: #add8e6;">
+    <div class="border rounded p-4" style="background-color: #ffffff; max-width: 400px; width: 100%;">
+        <div class="text-center">
+            <h1 class="display-4" style="color: #00008b;">Регистрация</h1>
+        </div>
+
+        <form action="/Login/Register/" method="post">
+            <div asp-validation-summary="All" class="text-danger"></div>
+
+            <div class="form-group">
+                <label for="login" class="form-label h2" style="color: #00008b;">Логин</label>
+                <input name="login" class="form-control" id="login" style="max-width: 100%;" />
+            </div>
+            <div class="form-group">
+                <label for="password" class="form-label h2" style="color: #00008b;">Пароль</label>
+                <input name="password" type="password" class="form-control" id="password" style="max-width: 100%;" />
+            </div>
+
+            <br />
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary btn-lg" style="background-color: #00008b; border-color: #00008b;">Регистрация</button>
+            </div>
+        </form>
+        <br />
+    </div>
+</div>
+
+
+
+
+
